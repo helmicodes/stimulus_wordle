@@ -1,0 +1,19 @@
+{
+  "name": "hotwire_wordle",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^4.1.0"
+  },
+  "dependencies": {
+    "@hotwired/stimulus": "^3.2.1",
+    "@hotwired/turbo": "^7.2.5",
+    "stimulus-vite-helpers": "^3.0.1"
+  }
+}
