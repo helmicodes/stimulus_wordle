@@ -1,0 +1,81 @@
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+
+.game-container {
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title-container {
+    text-align: center;
+    width: 510px;
+    border-bottom: solid 1px #3a3a3c;
+}
+
+.tile-container {
+    width: 330px;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.tile-container .tile {
+    width: 62px;
+    height: 62px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2px;
+}
+
+
+input[type="text"] {
+    text-align: center;
+    font-size: 32px;
+    padding: 10px;
+    text-transform: capitalize;
+    caret-color: transparent;
+}
+
+.visited {
+    border: 2px solid;
+}
+
+.tile.flip {
+    animation: 0.5s linear flipping;
+}
+
+@keyframes flipping {
+    0% {
+        transform: rotateX(0deg);
+    }
+    50% {
+        transform: rotateX(90deg);
+    }
+    100% {
+        transform: rotateX(0deg);
+    }
+}
+
+.grey-overlay {
+    color: white;
+    background-color: #787c7e !important;
+    border:none !important;
+}
+
+.yellow-overlay {
+    color: white;
+    background-color: #c9b458 !important;
+    border:none !important;
+}
+
+.green-overlay {
+    color: white;
+    background-color: #6aaa64 !important;
+    border:none !important;
+}
