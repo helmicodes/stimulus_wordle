@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/stimulus_wordle/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    
+    <script type="module" crossorigin src="/stimulus_wordle/assets/index-a91cc13b.js"></script>
+    <link rel="stylesheet" href="/stimulus_wordle/assets/index-f5bcfd82.css">
+  </head>
+  <body>
+    <div class="game-container">
+      <div class="title-container">
+        <h1>Wordle</h1>
+      </div>
+      <div data-controller="wordle">
+        <div class="word-letters tile-container" data-wordle-target="letters" id="row-1">
+          <input type="text" data-wordle-target="start" data-action="keyup->wordle#handleInput" maxlength="1" class="tile">
+          <input type="text" data-action="keyup->wordle#handleInput" maxlength="1" class="tile">
+          <input type="text" data-action="keyup->wordle#handleInput" maxlength="1" class="tile">
+          <input type="text" data-action="keyup->wordle#handleInput" maxlength="1" class="tile">
+          <input type="text" data-action="keyup->wordle#handleInput" maxlength="1" class="tile">
+        </div>
+        <div class="word-letters tile-container" data-wordle-target="letters" id="row-2">
+          <input type="text" data-action="keyup->wordle#handleInput" maxlength="1" class="tile">
+          <input type="text" data-wordle-target="letter" data-action="keyup->wordle#handleInput" maxlength="1" class="tile">
+          <input type="text" data-wordle-target="letter" data-action="keyup->wordle#handleInput" maxlength="1" class="tile">
+          <input type="text" data-wordle-target="letter" data-action="keyup->wordle#handleInput" maxlength="1" class="tile">
+          <input type="text" data-wordle-target="letter" data-action="keyup->wordle#handleInput" maxlength="1" class="tile">
+        </div>
+        <div class="word-letters tile-container" data-wordle-target="letters" id="row-3">
+          <input type="text" data-action="keyup->wordle#handleInput" maxlength="1" class="tile">
+          <input type="text" data-wordle-target="letter" data-action="keyup->wordle#handleInput" maxlength="1" class="tile">
+          <input type="text" data-wordle-target="letter" data-action="keyup->wordle#handleInput" maxlength="1" class="tile">
+          <input type="text" data-wordle-target="letter" data-action="keyup->wordle#handleInput" maxlength="1" class="tile">
+          <input type="text" data-wordle-target="letter" data-action="keyup->wordle#handleInput" maxlength="1" class="tile">
+        </div>
+        <div class="word-letters tile-container" data-wordle-target="letters" id="row-4">
+          <input type="text" data-action="keyup->wordle#handleInput" maxlength="1" class="tile">
+          <input type="text" data-wordle-target="letter" data-action="keyup->wordle#handleInput" maxlength="1" class="tile">
+          <input type="text" data-wordle-target="letter" data-action="keyup->wordle#handleInput" maxlength="1" class="tile">
+          <input type="text" data-wordle-target="letter" data-action="keyup->wordle#handleInput" maxlength="1" class="tile">
+          <input type="text" data-wordle-target="letter" data-action="keyup->wordle#handleInput" maxlength="1" class="tile">
+        </div>
+        <div class="word-letters tile-container" data-wordle-target="letters" id="row-5">
+          <input type="text" data-action="keyup->wordle#handleInput" maxlength="1" class="tile">
+          <input type="text" data-wordle-target="letter" data-action="keyup->wordle#handleInput" maxlength="1" class="tile">
+          <input type="text" data-wordle-target="letter" data-action="keyup->wordle#handleInput" maxlength="1" class="tile">
+          <input type="text" data-wordle-target="letter" data-action="keyup->wordle#handleInput" maxlength="1" class="tile">
+          <input type="text" data-wordle-target="letter" data-action="keyup->wordle#handleInput" maxlength="1" class="tile">
+        </div>
+        <div class="word-letters tile-container" data-wordle-target="letters" id="row-6">
+          <input type="text" data-action="keyup->wordle#handleInput" maxlength="1" class="tile">
+          <input type="text" data-wordle-target="letter" data-action="keyup->wordle#handleInput" maxlength="1" class="tile">
+          <input type="text" data-wordle-target="letter" data-action="keyup->wordle#handleInput" maxlength="1" class="tile">
+          <input type="text" data-wordle-target="letter" data-action="keyup->wordle#handleInput" maxlength="1" class="tile">
+          <input type="text" data-wordle-target="letter" data-action="keyup->wordle#handleInput" maxlength="1" class="tile">
+        </div>
+      </div>
+    </div>
+    
+  </body>
+</html>
